@@ -1,62 +1,110 @@
 import React from "react";
+import Homepage from "./Homepage";
+import ProjectsPage from "./ProjectsPage";
+import AboutMePage from "./AboutMePage";
 
-export default function NavBar({ fixed }) {
-    const [navbarOpen, setNavbarOpen] = React.useState(false);
+const Tabs = ({ color }) => {
+    const [openTab, setOpenTab] = React.useState(1);
+
+    const tabCss = "text-xs font-bold uppercase px-5 py-3 " +
+        "rounded " +
+        "block " +
+        "leading-normal " +
+        "border-2 border-" + color + "-600 " +
+        "hover:bg-gray-200 " +
+        "focus:bg-" + color + "-600 ";
+
     return (
         <>
-            <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-blue-500 mb-3">
-                <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-                    <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                        <a
-                            className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                            href="#pablo"
-                        >
-                            red Tailwind Starter Kit
-                        </a>
-                        <button
-                            className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
-                            type="button"
-                            onClick={() => setNavbarOpen(!navbarOpen)}
-                        >
-                            <i className="fas fa-bars"></i>
-                        </button>
-                    </div>
-                    <div
-                        className={
-                            "lg:flex flex-grow items-center" +
-                            (navbarOpen ? " flex" : " hidden")
-                        }
-                        id="example-navbar-danger"
+            <div className="flex flex-wrap">
+                <div className="w-full">
+                    <ul
+                        className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
+                        role="tablist"
                     >
-                        <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-                            <li className="nav-item">
-                                <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#pablo"
-                                >
-                                    <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Share</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#pablo"
-                                >
-                                    <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Tweet</span>
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a
-                                    className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                                    href="#pablo"
-                                >
-                                    <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Pin</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <li className="-mb-px mx-1 ml-2 last:mr-0 flex-auto text-center">
+                            <a
+                                className={
+                                    tabCss +
+                                    (openTab === 1
+                                        ? "text-white bg-" + color + "-600"
+                                        : "text-" + color + "-600 bg-white")
+                                }
+                                onClick={e => {
+                                    e.preventDefault();
+                                    setOpenTab(1);
+                                }}
+                                data-toggle="tab"
+                                href="#link1"
+                                role="tablist"
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li className="-mb-px mx-1 flex-auto text-center">
+                            <a
+                                className={
+                                    tabCss +
+                                    (openTab === 2
+                                        ? "text-white bg-" + color + "-600"
+                                        : "text-" + color + "-600 bg-white")
+                                }
+                                onClick={e => {
+                                    e.preventDefault();
+                                    setOpenTab(2);
+                                }}
+                                data-toggle="tab"
+                                href="#link2"
+                                role="tablist"
+                            >
+                                Projects
+                            </a>
+                        </li>
+                        <li className="-mb-px mx-1 mr-2 last:mr-0 flex-auto text-center">
+                            <a
+                                className={
+                                    tabCss +
+                                    (openTab === 3
+                                        ? "text-white bg-" + color + "-600"
+                                        : "text-" + color + "-600 bg-white")
+                                }
+                                onClick={e => {
+                                    e.preventDefault();
+                                    setOpenTab(3);
+                                }}
+                                data-toggle="tab"
+                                href="#link3"
+                                role="tablist"
+                            >
+                                About Me
+                            </a>
+                        </li>
+                    </ul>
+                    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded ">
+                        <div className="px-4 py-5 flex-auto">
+                            <div className="tab-content tab-space">
+                                <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                                    <Homepage />
+                                </div>
+                                <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                                    <ProjectsPage />
+                                </div>
+                                <div className={openTab === 3 ? "block" : "hidden"} id="link3">
+                                    <AboutMePage />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </>
+    );
+};
+
+export default function TabsRender() {
+    return (
+        <>
+            <Tabs color="blue" />
         </>
     );
 }

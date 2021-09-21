@@ -1,9 +1,9 @@
-import NavBar from "./NavBar";
 
-function Homepage() {
+export default function Homepage() {
     return(
-        <NavBar />
+        <p>
+            mmmmmmmmmmmm yes, homepage text
+        </p>
     )
 }
 
-export default Homepage;
