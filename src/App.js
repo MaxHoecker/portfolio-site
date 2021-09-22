@@ -14,8 +14,8 @@ function App() {
     secondaryNum: ""
   };
 
-  componentList.push(<Header colorConfig={colorConfig}/>);
-  componentList.push(<NavBar colorConfig={colorConfig}/>);
+  componentList.push(<Header key={"Header-Component"} colorConfig={colorConfig}/>);
+  componentList.push(<NavBar key={"NavBar-Component"} colorConfig={colorConfig}/>);
 
   return (
       componentList

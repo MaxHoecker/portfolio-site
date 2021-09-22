@@ -1,24 +1,12 @@
 import React from "react";
 import AboutPage from "./AboutPage";
-import ProjectsPage from "./ProjectsPage";
+import HowItsMadePage from "./HowItsMadePage";
 import ContactMePage from "./ContactMePage";
+import ExperiencePage from "./ExperiencePage";
+import Tab from "./Tab";
 
 const Tabs = (props) => {
     const [openTab, setOpenTab] = React.useState(1);
-
-    const tabCss = "text-xs font-bold uppercase px-5 py-3 " +
-        "rounded " +
-        "block " +
-        "leading-normal " +
-        "border-2 border-" + props.colorConfig.primary + props.colorConfig.primaryNum + " " +
-        "hover:bg-gray-200 " +
-        "focus:bg-" + props.colorConfig.primary + props.colorConfig.primaryNum + " ";
-
-    const tabActiveCss = "text-" + props.colorConfig.secondary + props.colorConfig.secondaryNum +
-        " bg-" + props.colorConfig.primary + props.colorConfig.primaryNum + " ";
-
-    const tabInactiveCss = "text-" + props.colorConfig.primary + props.colorConfig.primaryNum +
-        " bg-" + props.colorConfig.secondary + props.colorConfig.secondaryNum + " ";
 
     return (
         <>
@@ -28,66 +16,54 @@ const Tabs = (props) => {
                         className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
                         role="tablist"
                     >
-                        <li className="-mb-px mx-1 ml-2 last:mr-0 flex-auto text-center">
-                            <a
-                                className={
-                                    tabCss +
-                                    (openTab === 1
-                                        ? tabActiveCss
-                                        : tabInactiveCss
-                                    )
-                                }
-                                onClick={e => {
-                                    e.preventDefault();
-                                    setOpenTab(1);
-                                }}
-                                data-toggle="tab"
-                                href="#link1"
-                                role="tablist"
-                            >
-                                About
-                            </a>
-                        </li>
-                        <li className="-mb-px mx-1 flex-auto text-center">
-                            <a
-                                className={
-                                    tabCss +
-                                    (openTab === 2
-                                            ? tabActiveCss
-                                            : tabInactiveCss
-                                    )
-                                }
-                                onClick={e => {
-                                    e.preventDefault();
-                                    setOpenTab(2);
-                                }}
-                                data-toggle="tab"
-                                href="#link2"
-                                role="tablist"
-                            >
-                                Projects
-                            </a>
-                        </li>
-                        <li className="-mb-px mx-1 mr-2 last:mr-0 flex-auto text-center">
-                            <a
-                                className={
-                                    tabCss +
-                                    (openTab === 3
-                                        ? tabActiveCss
-                                        : tabInactiveCss
-                                    )
-                                }
-                                onClick={e => {
-                                    e.preventDefault();
-                                    setOpenTab(3);
-                                }}
-                                data-toggle="tab"
-                                href="#link3"
-                                role="tablist"
-                            >
-                                Contact Me
-                            </a>
-                        </li>
+                        <Tab
+                            onclick={e => {
+                                e.preventDefault();
+                                setOpenTab(1);
+                            }}
+                            tabNum={1}
+                            tabActive={openTab === 1}
+                            tabHeader={"About"}
+                            colorConfig={props.colorConfig}
+                            key={"About-Tab"}
+                        />
+
+                        <Tab
+                            onclick={e => {
+                                e.preventDefault();
+                                setOpenTab(2);
+                            }}
+                            tabNum={2}
+                            tabActive={openTab === 2}
+                            tabHeader={"How It's Made"}
+                            colorConfig={props.colorConfig}
+                            key={"How-Its-Made-Tab"}
+                        />
+
+                        <Tab
+                            onclick={e => {
+                                e.preventDefault();
+                                setOpenTab(3);
+                            }}
+                            tabNum={3}
+                            tabActive={openTab === 3}
+                            tabHeader={"Experience"}
+                            colorConfig={props.colorConfig}
+                            key={"Experience-Tab"}
+                        />
+
+                        <Tab
+                            onclick={e => {
+                                e.preventDefault();
+                                setOpenTab(4);
+                            }}
+                            tabNum={4}
+                            tabActive={openTab === 4}
+                            tabHeader={"Contact Me"}
+                            colorConfig={props.colorConfig}
+                            key={"Contact-Me-Tab"}
+                        />
+
                     </ul>
                     <div className={"relative flex flex-col min-w-0 break-words bg-" + props.colorConfig.bg + "-" + props.colorConfig.bgNum + " w-full mb-6 rounded "}>
                         <div className="px-4 py-5 flex-auto">
@@ -96,9 +72,12 @@ const Tabs = (props) => {
                                     <AboutPage colorConfig={props.colorConfig}/>
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                                    <ProjectsPage colorConfig={props.colorConfig}/>
+                                    <HowItsMadePage colorConfig={props.colorConfig}/>
                                 </div>
-                                <div className={openTab === 3 ? "block" : "hidden"} id="link3">
+                                <div className={openTab === 3 ? "block" : "hidden"} id="link2">
+                                    <ExperiencePage colorConfig={props.colorConfig}/>
+                                </div>
+                                <div className={openTab === 4 ? "block" : "hidden"} id="link3">
                                     <ContactMePage colorConfig={props.colorConfig}/>
                                 </div>
                             </div>

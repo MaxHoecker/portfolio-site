@@ -46,10 +46,10 @@ module.exports = {
         }
       },
       animation: {
-        'fade-in-right': 'fade-in-down 0.5s ease-out',
-        'fade-out-right': 'fade-out-down 0.5s ease-out',
-        'fade-in-left': 'fade-in-up 0.5s ease-out',
-        'fade-out-left': 'fade-out-up 0.5s ease-out'
+        'fade-in-right': 'fade-in-right 0.5s ease-out',
+        'fade-out-right': 'fade-out-right 0.5s ease-out',
+        'fade-in-left': 'fade-in-right 0.5s ease-out',
+        'fade-out-left': 'fade-out-right 0.5s ease-out'
       }
     },
   },

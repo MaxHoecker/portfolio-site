@@ -1,8 +1,12 @@
 import FadeInCard from "./FadeInCard";
 import React from "react";
 import awsInstanceImage from "./../images/awsLaunchInstance.PNG"
+import newProject from "./../images/reactAppStart.PNG"
+import siteText from "./../images/siteText.PNG"
+import earlySiteLook from "./../images/EarlySiteLook.PNG"
 
-export default function ProjectsPage(props){
+
+export default function HowItsMadePage(props){
     let cardList=[];
 
     const RunningMachine = (
@@ -40,13 +44,13 @@ export default function ProjectsPage(props){
     );
 
     cardList.push(
-        <FadeInCard childComponent={RunningMachine} colorConfig={props.colorConfig}/>
+        <FadeInCard key={"Running-Machine"} childComponent={RunningMachine} colorConfig={props.colorConfig}/>
     );
     cardList.push(
-        <FadeInCard childComponent={AWSCard} colorConfig={props.colorConfig}/>
+        <FadeInCard key={"AWS"} childComponent={AWSCard} colorConfig={props.colorConfig}/>
     );
     cardList.push(
-        <FadeInCard childComponent={MakingTheProject} colorConfig={props.colorConfig}/>
+        <FadeInCard key={"Making-The-Project"} childComponent={MakingTheProject} colorConfig={props.colorConfig}/>
     );
 
 
