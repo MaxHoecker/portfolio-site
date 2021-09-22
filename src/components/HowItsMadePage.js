@@ -4,10 +4,27 @@ import awsInstanceImage from "./../images/awsLaunchInstance.PNG"
 import newProject from "./../images/reactAppStart.PNG"
 import siteText from "./../images/siteText.PNG"
 import earlySiteLook from "./../images/EarlySiteLook.PNG"
+import ScrollSlideLeft from "../wrappers/ScrollSlideLeft";
+import ScrollSlideRight from "../wrappers/ScrollSlideRight";
 
 
 export default function HowItsMadePage(props){
     let cardList=[];
+
+    const Prelude = (
+        <div>
+            <p>
+                You may be wondering, What is this mysterious tab called "how it's made" and why does it exist?<br/>
+                Basically, I was looking at different places to apply for spring co-ops and in their application they would have a field for "personal website"<br/>
+                so I thought, why haven't I made a site of my own?<br/>
+                I certainly know how to<br/>
+                What should I put on this site?<br/>
+                How about the steps I went through to make it?<br/>
+                And thus my journey begins...<br/>
+            </p>
+        </div>
+    )
+
 
     const RunningMachine = (
         <div>
@@ -32,25 +49,39 @@ export default function HowItsMadePage(props){
 
     const MakingTheProject = (
         <div>
-            {/*<img src={awsInstanceImage} alt={"AWS instance launch screen"}/>*/}
+            <img src={newProject} alt={"empty Webstorm Project"}/>
             <p>
                 Now I need to set up the project that will be the code that actually runs <br/>
                 So I went to my favorite ide for web development(Webstorm) and made a new React based project, and linked it up to a remote git repository <br/>
                 When making a site choosing a css framework to use can significantly cut down on development time <br/>
                 I decided to go with Tailwind because it's lightweight and allows a lot of customization very rapidly <br/>
+            </p>
+        </div>
+    );
+
+    const GruntWork = (
+        <div>
+            <img src={siteText} alt={"inception type picture of the text"}/>
+            <p>
                 After choosing a css framework I now have to do all the grunt work including writing this text you're reading and putting in these images you're looking at <br/>
             </p>
         </div>
     );
 
     cardList.push(
-        <FadeInCard key={"Running-Machine"} childComponent={RunningMachine} colorConfig={props.colorConfig}/>
+        <ScrollSlideRight key={"Prelude-Transition"} children={<FadeInCard key={"Prelude"} childComponent={Prelude} colorConfig={props.colorConfig}/>}/>
     );
     cardList.push(
-        <FadeInCard key={"AWS"} childComponent={AWSCard} colorConfig={props.colorConfig}/>
+        <ScrollSlideLeft key={"Running-Machine-Transition"} children={<FadeInCard key={"Running-Machine"} childComponent={RunningMachine} colorConfig={props.colorConfig}/>}/>
     );
     cardList.push(
-        <FadeInCard key={"Making-The-Project"} childComponent={MakingTheProject} colorConfig={props.colorConfig}/>
+        <ScrollSlideRight key={"AWS-Transition"} children={<FadeInCard key={"AWS"} childComponent={AWSCard} colorConfig={props.colorConfig}/>}/>
+    );
+    cardList.push(
+        <ScrollSlideLeft key={"Making-The-Project-Transition"} children={<FadeInCard key={"Making-The-Project"} childComponent={MakingTheProject} colorConfig={props.colorConfig}/>}/>
+    );
+    cardList.push(
+        <ScrollSlideRight key={"GruntWork-Transition"} children={<FadeInCard key={"GruntWork"} childComponent={GruntWork} colorConfig={props.colorConfig}/>}/>
     );
 
 

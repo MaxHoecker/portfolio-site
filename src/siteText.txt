@@ -12,7 +12,7 @@ How It's Made:
 
 --prelude
 You may be wondering, What is this mysterious tab called "how it's made" and why does it exist?
-Basically, I was looking at different places to apply for spring co-ops and they
+Basically, I was looking at different places to apply for spring co-ops and in their application they would have a field for "personal website"
 so I thought, why haven't I made a site of my own?
 I certainly know how to
 What should I put on this site?
