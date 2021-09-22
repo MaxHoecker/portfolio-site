@@ -1,18 +1,24 @@
 import React from "react";
-import Homepage from "./Homepage";
+import AboutPage from "./AboutPage";
 import ProjectsPage from "./ProjectsPage";
-import AboutMePage from "./AboutMePage";
+import ContactMePage from "./ContactMePage";
 
-const Tabs = ({ color }) => {
+const Tabs = (props) => {
     const [openTab, setOpenTab] = React.useState(1);
 
     const tabCss = "text-xs font-bold uppercase px-5 py-3 " +
         "rounded " +
         "block " +
         "leading-normal " +
-        "border-2 border-" + color + "-600 " +
+        "border-2 border-" + props.colorConfig.primary + props.colorConfig.primaryNum + " " +
         "hover:bg-gray-200 " +
-        "focus:bg-" + color + "-600 ";
+        "focus:bg-" + props.colorConfig.primary + props.colorConfig.primaryNum + " ";
+
+    const tabActiveCss = "text-" + props.colorConfig.secondary + props.colorConfig.secondaryNum +
+        " bg-" + props.colorConfig.primary + props.colorConfig.primaryNum + " ";
+
+    const tabInactiveCss = "text-" + props.colorConfig.primary + props.colorConfig.primaryNum +
+        " bg-" + props.colorConfig.secondary + props.colorConfig.secondaryNum + " ";
 
     return (
         <>
@@ -27,8 +33,9 @@ const Tabs = ({ color }) => {
                                 className={
                                     tabCss +
                                     (openTab === 1
-                                        ? "text-white bg-" + color + "-600"
-                                        : "text-" + color + "-600 bg-white")
+                                        ? tabActiveCss
+                                        : tabInactiveCss
+                                    )
                                 }
                                 onClick={e => {
                                     e.preventDefault();
@@ -38,7 +45,7 @@ const Tabs = ({ color }) => {
                                 href="#link1"
                                 role="tablist"
                             >
-                                Home
+                                About
                             </a>
                         </li>
                         <li className="-mb-px mx-1 flex-auto text-center">
@@ -46,8 +53,9 @@ const Tabs = ({ color }) => {
                                 className={
                                     tabCss +
                                     (openTab === 2
-                                        ? "text-white bg-" + color + "-600"
-                                        : "text-" + color + "-600 bg-white")
+                                            ? tabActiveCss
+                                            : tabInactiveCss
+                                    )
                                 }
                                 onClick={e => {
                                     e.preventDefault();
@@ -65,8 +73,9 @@ const Tabs = ({ color }) => {
                                 className={
                                     tabCss +
                                     (openTab === 3
-                                        ? "text-white bg-" + color + "-600"
-                                        : "text-" + color + "-600 bg-white")
+                                        ? tabActiveCss
+                                        : tabInactiveCss
+                                    )
                                 }
                                 onClick={e => {
                                     e.preventDefault();
@@ -76,21 +85,21 @@ const Tabs = ({ color }) => {
                                 href="#link3"
                                 role="tablist"
                             >
-                                About Me
+                                Contact Me
                             </a>
                         </li>
                     </ul>
-                    <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded ">
+                    <div className={"relative flex flex-col min-w-0 break-words bg-" + props.colorConfig.bg + "-" + props.colorConfig.bgNum + " w-full mb-6 rounded "}>
                         <div className="px-4 py-5 flex-auto">
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                                    <Homepage />
+                                    <AboutPage colorConfig={props.colorConfig}/>
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                                    <ProjectsPage />
+                                    <ProjectsPage colorConfig={props.colorConfig}/>
                                 </div>
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                                    <AboutMePage />
+                                    <ContactMePage colorConfig={props.colorConfig}/>
                                 </div>
                             </div>
                         </div>
@@ -101,10 +110,10 @@ const Tabs = ({ color }) => {
     );
 };
 
-export default function TabsRender() {
+export default function TabsRender(props) {
     return (
         <>
-            <Tabs color="blue" />
+            <Tabs colorConfig = {props.colorConfig} />
         </>
     );
 }

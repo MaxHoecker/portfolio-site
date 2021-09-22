@@ -1,7 +1,20 @@
+
+Home Page:
+Hi, my name is Max Hoecker.
+I'm sure you've probably seen many sites like these. What makes mine different? Uhhhhhh
+The heart and soul I've poured into it?
+Anyway, what are some things "About Me"(use the component that looks like the tab)? Well my top 4 things I like to do are Tennis, Vidya Gaming, Travelling, and just hanging with my friends.
+I come from a small town in Maine called Boothbay
+I currently attend Rochester Institute of Technology as a 4th year software engineer.
+I've been on one co-op, it was this past Summer/Fall of 2020 and I'm currently looking for a co-op for the spring semester
+
+Projects:
+
+--Personal website--
 blah blah blah
 so I thought, why not make a site of my own?
 What should I put on this site?
-How about what I went through to make it?
+How about the steps I went through to make the site?
 So I know that there's two main pieces I'll need, some code that makes up the site, and a machine for the site to be hosted on.
 In terms of having a machine to run the site on I knew I had two main options, hosting it on a cloud instance or on a raspberry pie I have lying around.
 I decided to go for making a vm instance on AWS for mostly the learning experience
@@ -12,6 +25,7 @@ When making a site choosing a css framework to use can significantly cut down on
 I decided to go with Tailwind because it's lightweight and allows a lot of customization very rapidly
 After choosing a css framework I now have to do all the grunt work including writing this text you're reading and putting in these images you're looking at
 Here's what the site looked like real early on (I sure hope it looks better now)
+Shoutout to my friend Rachel for helping me figure out how to make the site not look like trash!
 
 -setting up nginx on the VM
 -pull the code from github
@@ -19,3 +33,15 @@ Here's what the site looked like real early on (I sure hope it looks better now)
 -buying a domain from namecheap
 -linking the domain name to the VM instance
 -bada-bing bada-boom the site works!
+
+Contact Me:
+--email
+you can reach me at either of these email addresses:
+    mjh9131@rit.edu (preferred)
+    hoecker.max@gmail.com
+
+My linkedin can be found at:
+    https://linkedin.com/in/MaxHoecker
+
+My github can be found at:
+    https://github.com/MaxHoecker

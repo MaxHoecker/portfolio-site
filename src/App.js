@@ -5,8 +5,17 @@ function App() {
 
   let componentList = [];
 
-  componentList.push(<Header/>);
-  componentList.push(<NavBar/>);
+  let colorConfig = {
+    bg: "gray",
+    bgNum: "-100",
+    primary: "blue",
+    primaryNum: "-600",
+    secondary: "white",
+    secondaryNum: ""
+  };
+
+  componentList.push(<Header colorConfig={colorConfig}/>);
+  componentList.push(<NavBar colorConfig={colorConfig}/>);
 
   return (
       componentList
