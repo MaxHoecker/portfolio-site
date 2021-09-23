@@ -1,12 +1,14 @@
 
 Home Page:
-Hi, my name is Max Hoecker.
-I'm sure you've probably seen many sites like these. What makes mine different? Uhhhhhh
-The heart and soul I've poured into it?
-Anyway, what are some things "About Me"(use the component that looks like the tab)? Well my top 4 things I like to do are Tennis, Vidya Gaming, Travelling, and just hanging with my friends.
-I come from a small town in Maine called Boothbay
+Hi, I'm Max.
+
+I'm sure you've probably seen many sites like these. Sorry for it not being the prettiest site you've seen. I tried pretty hard to make it look nice though.
+
+Anyway, what are some things about me? Well my top 4 things I like to do are Tennis, Video Gaming, Travelling, and just hanging with my friends.
+I come from a small town in Maine called Boothbay, where my passion for STEM was nurtured by a supportive community.
 I currently attend Rochester Institute of Technology as a 4th year software engineer.
-I've been on one co-op, it was this past Summer/Fall of 2020 and I'm currently looking for a co-op for the spring semester
+I absolutely love coding and am very excited to be coding full-time when I graduate.
+And I've been on one co-op, it was this past Summer/Fall of 2020 and I'm currently looking for a co-op for the spring semester.
 
 How It's Made:
 
@@ -14,9 +16,10 @@ How It's Made:
 You may be wondering, What is this mysterious tab called "how it's made" and why does it exist?
 Basically, I was looking at different places to apply for spring co-ops and in their application they would have a field for "personal website"
 so I thought, why haven't I made a site of my own?
-I certainly know how to
-What should I put on this site?
-How about the steps I went through to make it?
+I certainly know how to.
+
+When thinking about what to put on the site I had an idea.
+What about the steps I went through to make it?
 And thus my journey begins...
 
 So I know that there's two main pieces I'll need, some code that makes up the site, and a machine for the site to be hosted on.
@@ -35,7 +38,6 @@ After choosing a css framework I now have to do all the grunt work including wri
 
 Here's what the site looked like real early on (I sure hope it looks better now)
 
-
 After some work on the site's looks I wanted to make it so that I could actually run the code I've been writing on the VM I had booted up on AWS
 So after connecting to the Virtual Machine I installed git, made a folder for the website to be contained within,
 pulled the repository from github, installed nodejs and npm, installed dependencies, and then made a production build of the app
@@ -43,11 +45,18 @@ pulled the repository from github, installed nodejs and npm, installed dependenc
 After a bit of pain editing the Virtual Machine's security groups again, and messing with installation commands and config files,
 I eventually got it so that the nginx landing page would appear when I went to the VM's public ip address
 
--buying a domain from namecheap
--linking the domain name to the VM instance
--bada-bing bada-boom the site works!
+Now I just need to buy a domain name for my site. I used Namecheap and decided on the domain max-hoecker.com because unfortunately maxhoecker.com was already taken by my doppelganger
+After buying the domain I just had to make an A record and point it to the ip address of the virtual machine.
 
-Shoutout to my friend Rachel for helping me figure out how to make the site not look like trash!
+And just like that, bada-bing bada-boom I have a website!
+
+Reflection:
+Learning experience
+definitely worth it
+cool seeing how every layer of the tech stack interacts with each other
+making things look nice is hard, like 80% of the work
+
+Shout-out to my friend Rachel for helping me figure out how to make the site not look like trash!
 
 Big thanks to https://javascript.plainenglish.io/how-to-trigger-animations-using-react-hooks-27f0231b98b7 for helping figure out animations
 
@@ -57,15 +66,22 @@ This site
 ScanPower
 Malachowsky
 Supplemental Instruction
+Muze Music Library System and its emphasis on design
 
 Contact Me:
 --email
-you can reach me at either of these email addresses:
+
+Feel free to reach out to me about anything
+
+Resume:
+
+
+Email:
     mjh9131@rit.edu (preferred)
     hoecker.max@gmail.com
 
-My linkedin can be found at:
+Linkedin:
     https://linkedin.com/in/MaxHoecker
 
-My github can be found at:
+Github:
     https://github.com/MaxHoecker

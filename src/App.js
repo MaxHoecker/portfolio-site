@@ -9,7 +9,7 @@ function App() {
   componentList.push(<NavBar key={"NavBar-Component"} />);
 
   return (
-      <div className={"bg-backgroundColor-dark h-screen"}>
+      <div className={"bg-backgroundColor-dark h-screen overflow-x:hidden overflow-y:scroll"}>
         {componentList}
       </div>
   );
