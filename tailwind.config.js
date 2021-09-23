@@ -9,13 +9,15 @@ module.exports = {
     },
     colors:{
       backgroundColor: {
+        light: '#465A85',
         DEFAULT: '#405278',
+        dark: '#32405E'
       },
       primary: {
-        DEFAULT: '#1fb6ff',
+        DEFAULT: '#C49D41',
       },
       secondary: {
-        DEFAULT: '#ffffff',
+        DEFAULT: '#45708F',
       }
     }
   },

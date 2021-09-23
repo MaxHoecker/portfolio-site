@@ -9,10 +9,9 @@ export default function Tab(props){
         "block " +
         "leading-normal " +
         "border-2 border-primary " +
-        "hover:bg-gray-200 " +
-        "focus:bg-backgroundColor ";
+        "hover:bg-backgroundColor-dark hover:text-primary ";
 
-    const tabActiveCss = "text-primary bg-backgroundColor ";
+    const tabActiveCss = "text-backgroundColor bg-primary ";
 
     const tabInactiveCss = "text-primary bg-backgroundColor";
 
