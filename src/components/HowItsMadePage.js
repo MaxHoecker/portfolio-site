@@ -85,7 +85,7 @@ export default function HowItsMadePage(){
         <div>
             <img src={earlySiteLook} alt={"image of the site early on in development"}/>
             <p>
-                Here's what the site looked like real early on (I sure hope it looks better now)
+                Here's what the site looked like really early on (I sure hope it looks better now)
             </p>
         </div>
     );
