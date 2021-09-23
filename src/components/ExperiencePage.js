@@ -1,4 +1,4 @@
-export default function ExperiencePage(props) {
+export default function ExperiencePage() {
 
     return(
         <div>

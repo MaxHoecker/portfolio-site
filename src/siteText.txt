@@ -35,14 +35,21 @@ After choosing a css framework I now have to do all the grunt work including wri
 
 Here's what the site looked like real early on (I sure hope it looks better now)
 
-Shoutout to my friend Rachel for helping me figure out how to make the site not look like trash!
 
--setting up nginx on the VM
--pull the code from github
--make a production build of the app
+After some work on the site's looks I wanted to make it so that I could actually run the code I've been writing on the VM I had booted up on AWS
+So after connecting to the Virtual Machine I installed git, made a folder for the website to be contained within,
+pulled the repository from github, installed nodejs and npm, installed dependencies, and then made a production build of the app
+
+After a bit of pain editing the Virtual Machine's security groups again, and messing with installation commands and config files,
+I eventually got it so that the nginx landing page would appear when I went to the VM's public ip address
+
 -buying a domain from namecheap
 -linking the domain name to the VM instance
 -bada-bing bada-boom the site works!
+
+Shoutout to my friend Rachel for helping me figure out how to make the site not look like trash!
+
+Big thanks to https://javascript.plainenglish.io/how-to-trigger-animations-using-react-hooks-27f0231b98b7 for helping figure out animations
 
 
 Experience:

@@ -8,7 +8,7 @@ import ScrollSlideLeft from "../wrappers/ScrollSlideLeft";
 import ScrollSlideRight from "../wrappers/ScrollSlideRight";
 
 
-export default function HowItsMadePage(props){
+export default function HowItsMadePage(){
     let cardList=[];
 
     const Prelude = (
@@ -69,19 +69,19 @@ export default function HowItsMadePage(props){
     );
 
     cardList.push(
-        <ScrollSlideRight key={"Prelude-Transition"} children={<FadeInCard key={"Prelude"} childComponent={Prelude} colorConfig={props.colorConfig}/>}/>
+        <ScrollSlideRight key={"Prelude-Transition"} children={<FadeInCard key={"Prelude"} childComponent={Prelude} />}/>
     );
     cardList.push(
-        <ScrollSlideLeft key={"Running-Machine-Transition"} children={<FadeInCard key={"Running-Machine"} childComponent={RunningMachine} colorConfig={props.colorConfig}/>}/>
+        <ScrollSlideLeft key={"Running-Machine-Transition"} children={<FadeInCard key={"Running-Machine"} childComponent={RunningMachine} />}/>
     );
     cardList.push(
-        <ScrollSlideRight key={"AWS-Transition"} children={<FadeInCard key={"AWS"} childComponent={AWSCard} colorConfig={props.colorConfig}/>}/>
+        <ScrollSlideRight key={"AWS-Transition"} children={<FadeInCard key={"AWS"} childComponent={AWSCard} />}/>
     );
     cardList.push(
-        <ScrollSlideLeft key={"Making-The-Project-Transition"} children={<FadeInCard key={"Making-The-Project"} childComponent={MakingTheProject} colorConfig={props.colorConfig}/>}/>
+        <ScrollSlideLeft key={"Making-The-Project-Transition"} children={<FadeInCard key={"Making-The-Project"} childComponent={MakingTheProject} />}/>
     );
     cardList.push(
-        <ScrollSlideRight key={"GruntWork-Transition"} children={<FadeInCard key={"GruntWork"} childComponent={GruntWork} colorConfig={props.colorConfig}/>}/>
+        <ScrollSlideRight key={"GruntWork-Transition"} children={<FadeInCard key={"GruntWork"} childComponent={GruntWork} />}/>
     );
 
 

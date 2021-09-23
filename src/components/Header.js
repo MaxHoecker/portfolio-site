@@ -1,7 +1,7 @@
 import github from './../images/github.svg';
 
 export default function Header() {
-    let classNameText = "text-center text-4xl";
+    let classNameText = "text-center text-4xl font-mukta";
 
     return(
         <div className={"p-10"}>
