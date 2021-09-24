@@ -1,6 +1,8 @@
 export default function ContactMePage() {
 
     const contactCss = "text-primary m-4";
+    const headerCss = "text-secondary text-xl";
+    const contactInfoCss = "ml-4";
 
     return (
         <div className={"bg-backgroundColor m-4 p-6 rounded-2xl text-primary whitespace-pre-wrap"}>
@@ -9,29 +11,29 @@ export default function ContactMePage() {
             </p>
 
             <div className={contactCss}>
-                <h2>
+                <h2 className={headerCss}>
                     Email:
                 </h2>
-                <p className={"whitespace-pre-wrap"}>
+                <p className={contactInfoCss}>
                     mjh9131@rit.edu (preferred) <br/>
                     hoecker.max@gmail.com
                 </p>
             </div>
 
             <div className={contactCss}>
-                <h2>
+                <h2 className={headerCss}>
                     Linkedin:
                 </h2>
-                <p>
+                <p className={contactInfoCss}>
                     https://linkedin.com/in/MaxHoecker
                 </p>
             </div>
 
             <div className={contactCss}>
-                <h2>
+                <h2 className={headerCss}>
                     Github:
                 </h2>
-                <p>
+                <p className={contactInfoCss}>
                     https://github.com/MaxHoecker
                 </p>
             </div>
