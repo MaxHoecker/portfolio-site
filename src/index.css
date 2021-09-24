@@ -1,3 +1,7 @@
+.ReactCollapse--collapse {
+    transition: height 300ms;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

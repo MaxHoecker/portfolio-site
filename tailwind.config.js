@@ -17,7 +17,7 @@ module.exports = {
         DEFAULT: '#D7D7D4',
       },
       secondary: {
-        DEFAULT: '#45708F',
+        DEFAULT: '#7CC480',
       }
     }
   },
