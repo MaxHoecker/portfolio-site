@@ -44,7 +44,7 @@ export default function HowItsMadePage(){
 
             <p>
                 So I know that there's two main pieces I'll need, some code that makes up the site, and a machine for the site to be hosted on. <br/>
-                In terms of having a machine to run the site on I knew I had two main options, hosting it on a cloud instance or on a raspberry pie I have lying around. <br/>
+                In terms of having a machine to run the site on I knew I had two main options, hosting it on a cloud instance or on a raspberry pi I have lying around. <br/>
                 I decided to go for making a vm instance on AWS for mostly the learning experience <br/>
             </p>
         </div>

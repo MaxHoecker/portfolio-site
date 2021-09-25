@@ -11,7 +11,7 @@ export default function Experience(props){
         <div className={wrapperCSS}>
             <div>
                 {props.image}
-                <h1>
+                <h1 className={"text-secondary"}>
                     {props.title}
                 </h1>
             </div>

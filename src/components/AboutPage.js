@@ -8,9 +8,9 @@ export default function AboutPage() {
                 </h2>
 
                 <br/>
-                I'm sure you've probably seen many sites like these. Sorry for it not being the prettiest site you've seen. I tried pretty hard to make it look nice though.<br/>
+                This is my personal website! Totally the best looking site you've seen right? ;)<br/>
                 <br/>
-                Anyway, what are some things about me? Well my top 4 things I like to do are tennis, video gaming, travelling, and just hanging with my friends.<br/>
+                So, what are some things about me? Well my top 4 things I like to do are tennis, video gaming, travelling, and just hanging with my friends.<br/>
                 I come from a small town in Maine called Boothbay, where my passion for STEM was nurtured by a supportive community.<br/>
                 I currently attend Rochester Institute of Technology as a 4th year software engineer.<br/>
                 <br/>

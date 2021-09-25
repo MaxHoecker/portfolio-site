@@ -3,7 +3,7 @@ Home Page:
 
 Hi, I'm Max.
 
-I'm sure you've probably seen many sites like these. Sorry for it not being the prettiest site you've seen. I tried pretty hard to make it look nice though.
+This is my personal website! Totally the best looking site you've seen ;)
 
 Anyway, what are some things about me? Well my top 4 things I like to do are Tennis, Video Gaming, Travelling, and just hanging with my friends.
 I come from a small town in Maine called Boothbay, where my passion for STEM was nurtured by a supportive community.
@@ -30,7 +30,7 @@ What about the steps I went through to make it?
 And thus my journey begins...
 
 So I know that there's two main pieces I'll need, some code that makes up the site, and a machine for the site to be hosted on.
-In terms of having a machine to run the site on I knew I had two main options, hosting it on a cloud instance or on a raspberry pie I have lying around.
+In terms of having a machine to run the site on I knew I had two main options, hosting it on a cloud instance or on a raspberry pi I have lying around.
 I decided to go for making a vm instance on AWS for mostly the learning experience and in-case I want to use my raspberry pi for something else later.
 
 So I made an AWS account, booted up a micro ec2-instance on the free tier, set up sshing into the VM, and allowed http and https protocols in the security groups
