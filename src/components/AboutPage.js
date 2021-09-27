@@ -1,16 +1,16 @@
+import niagara from "./../images/aboutpage/niagra.jpg"
 
 export default function AboutPage() {
     return(
         <div className={"bg-backgroundColor m-4 p-6 rounded-2xl text-primary"}>
+            <img className={"md:h-80 object-scale-down mx-auto my-4 rounded shadow-lg"} src={niagara} alt={"Me in front of niagara falls"} />
+            <h2 className={"text-secondary text-xl"}>
+                Hi, I'm Max.<br/>
+            </h2>
             <p>
-                <h2 className={"text-secondary text-xl"}>
-                    Hi, I'm Max.<br/>
-                </h2>
-
                 <br/>
-                This is my personal website! Totally the best looking site you've seen right? ;)<br/>
                 <br/>
-                So, what are some things about me? Well my top 4 things I like to do are tennis, video gaming, travelling, and just hanging with my friends.<br/>
+                So, what are some notable things about me? Well my top 4 things I like to do are tennis, video gaming, travelling, and just hanging with my friends.<br/>
                 I come from a small town in Maine called Boothbay, where my passion for STEM was nurtured by a supportive community.<br/>
                 I currently attend Rochester Institute of Technology as a 4th year software engineer.<br/>
                 <br/>

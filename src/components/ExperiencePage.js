@@ -1,4 +1,7 @@
 import Experience from "./Experience";
+import SI from "./../images/experience/SILogo.jpg";
+import Scanpower from "./../images/experience/Scanpower.png";
+import initials from "./../images/experience/initials.png"
 
 export default function ExperiencePage() {
 
@@ -16,37 +19,60 @@ export default function ExperiencePage() {
 
     const ScanPower = (
         <div>
-            <p>
-                ScanPower
-            </p>
+            <ul className={"list-disc"}>
+                <li>
+                    Full-stack development that was done remotely, utilizing mainly PHP, PostgreSQL, and JavaScript.
+                </li>
+                <li>
+                    Maintained constant communication with the rest of the DevOps team throughout every workday.
+                </li>
+                <li>
+                    Established automated testing in their system from the ground up, enabling them to reach 30% code coverage within 8-months.
+                </li>
+                <li>
+                    Integrated customer feedback into the system's design.
+                </li>
+            </ul>
         </div>
     );
 
-    const SeniorProject =(
-        <div>
-            <p>
-                Senior Project Website
-            </p>
-        </div>
-    );
+    // const SeniorProject =(
+    //     <div>
+    //         <p>
+    //             Senior Project Website
+    //         </p>
+    //     </div>
+    // );
 
     const SupplementalInstruction = (
         <div>
-            <p>
-                Supplemental Instruction
-            </p>
+            <ul className={"list-disc"}>
+                <li>
+                    Facilitated sessions twice a week to review computer science content for transfer students.
+                </li>
+                <li>
+                    Adapted to different learning styles for students attending Supplemental Instruction review sessions.
+                </li>
+                <li>
+                    Collaborated with peer Supplemental Instructors via Slack and in weekly training sessions to integrate new learning techniques into my sessions.
+                </li>
+                <li>
+                    Was accountable for maintaining the attendance of my review sessions and incorporating different marketing strategies.
+                </li>
+            </ul>
+            Tools: Python, Java, GitHub, Slack, Discord, IntelliJ
         </div>
     );
 
     return(
         <div className={"bg-backgroundColor m-4 p-6 rounded-2xl text-primary"}>
-            <Experience image={""} title={"This website"} child={Website}/>
+            <Experience image={initials} title={"This website"} child={Website}/>
             <br/>
-            <Experience image={""} title={"ScanPower"} child={ScanPower}/>
+            <Experience image={Scanpower} title={"ScanPower"} child={ScanPower}/>
             <br/>
-            <Experience image={""} title={"Senior Project Website"} child={SeniorProject}/>
-            <br/>
-            <Experience image={""} title={"Supplemental Instruction"} child={SupplementalInstruction}/>
+            {/*<Experience image={""} title={"Senior Project Website"} child={SeniorProject}/>*/}
+            {/*<br/>*/}
+            <Experience image={SI} title={"Supplemental Instruction"} child={SupplementalInstruction}/>
 
         </div>
     )
