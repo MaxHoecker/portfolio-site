@@ -18,6 +18,21 @@ module.exports = {
       },
       secondary: {
         DEFAULT: '#7CC480',
+      },
+      dominant: {
+        light: '#57AAFF',
+        DEFAULT: '#2C73D2',
+        dark: '#004FA8'
+      },
+      complimentary: {
+        light: '#70FACB',
+        DEFAULT: '#2AC195',
+        dark: '#008A62'
+      },
+      accent: {
+        light: '#F6F9FF',
+        DEFAULT: '#424656',
+        dark: '#1d2536'
       }
     }
   },

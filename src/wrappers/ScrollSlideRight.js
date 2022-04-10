@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import useTriggerOnScroll from '../hooks/useTriggerOnScroll';
 import Slide from './SlideRight';
 

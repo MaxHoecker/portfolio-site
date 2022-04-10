@@ -2,7 +2,8 @@ export default function ContactMePage() {
 
     const contactCss = "text-primary m-4";
     const headerCss = "text-secondary text-xl";
-    const contactInfoCss = "ml-4";
+    const contactInfoLinkCss = "ml-4 hover:text-secondary";
+    const contactInfoNoLinkCss = "ml-4";
 
     return (
         <div className={"bg-backgroundColor m-4 p-6 rounded-2xl text-primary whitespace-pre-wrap"}>
@@ -14,7 +15,7 @@ export default function ContactMePage() {
                 <h2 className={headerCss}>
                     Email:
                 </h2>
-                <p className={contactInfoCss}>
+                <p className={contactInfoNoLinkCss}>
                     mjh9131@rit.edu (preferred) <br/>
                     hoecker.max@gmail.com
                 </p>
@@ -24,18 +25,18 @@ export default function ContactMePage() {
                 <h2 className={headerCss}>
                     Linkedin:
                 </h2>
-                <p className={contactInfoCss}>
-                    https://linkedin.com/in/MaxHoecker
-                </p>
+                <a className={contactInfoLinkCss} href="https://linkedin.com/in/MaxHoecker">
+                    https://github.com/MaxHoecker
+                </a>
             </div>
 
             <div className={contactCss}>
                 <h2 className={headerCss}>
                     Github:
                 </h2>
-                <p className={contactInfoCss}>
+                <a className={contactInfoLinkCss} href="https://github.com/MaxHoecker">
                     https://github.com/MaxHoecker
-                </p>
+                </a>
             </div>
 
 
