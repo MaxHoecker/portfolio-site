@@ -1,0 +1,16 @@
+add https!
+
+Don't have separate tabs
+make it all one big tab
+links at the top jump to important sections
+
+replace prelude and get to the point
+
+accompany the about section with more pictures
+
+maybe make it an interactive game? O.o
+
+use design patterns
+
+show usage of design patterns
+

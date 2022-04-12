@@ -12,6 +12,7 @@ export default function AboutPage() {
                 <br/>
                 So, what are some notable things about me? Well my top 4 things I like to do are tennis, video gaming, travelling, and just hanging with my friends.<br/>
                 I come from a small town in Maine called Boothbay, where my passion for STEM was nurtured by a supportive community.<br/>
+                <br/>
                 I currently attend Rochester Institute of Technology as a 4th year software engineer.<br/>
                 <br/>
                 I absolutely love coding and am very excited to be coding full-time when I graduate.<br/>

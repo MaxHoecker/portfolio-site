@@ -1,0 +1,69 @@
+{
+  "work": {
+    "paychex": {
+      "position-title": "",
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    },
+    "scanpower": {
+      "position-title": "",
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    },
+    "senior-website": {
+      "position-title": "",
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    },
+    "supplemental-instruction": {
+      "position-title": "",
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    }
+  },
+  "projects": {
+    "muze-music": {
+      "academic": true,
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    },
+    "web-checkers": {
+      "academic": true,
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    },
+    "this-site": {
+      "academic": false,
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    },
+    "kings-war": {
+      "academic": false,
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    },
+    "bobby-bot": {
+      "academic": false,
+      "timeframe": "",
+      "overview": "",
+      "tasks": "",
+      "tools": ""
+    }
+  }
+}

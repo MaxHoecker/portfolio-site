@@ -19,6 +19,8 @@ import ScrollSlideRight from "../wrappers/ScrollSlideRight";
 export default function HowItsMadePage(){
     let cardList=[];
 
+
+    //maybe replace prelude with something short like "this is how I made this site"
     const Prelude = (
         <div>
             <p>
