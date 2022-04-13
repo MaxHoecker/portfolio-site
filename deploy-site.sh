@@ -1,4 +1,4 @@
-mv ./nginx.conf /etc/nginx/nginx.conf
 sudo systemctl stop nginx
-sudo systemctl enable --now nginx
+mv ./nginx.conf /etc/nginx/nginx.conf
+sudo systemctl start nginx
 npm run-script build
