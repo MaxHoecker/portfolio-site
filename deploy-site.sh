@@ -1,4 +1,5 @@
-sudo systemctl stop nginx
+#sudo systemctl stop nginx
 cp ./max-hoecker.conf /etc/nginx/conf.d/
-sudo systemctl start nginx
+cp ./nginx.conf /etc/nginx/
+#sudo systemctl start nginx
 #npm run-script build
