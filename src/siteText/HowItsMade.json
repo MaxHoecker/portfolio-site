@@ -1,0 +1,122 @@
+{
+  "metadata": {},
+  "content": [
+    {
+      "images": [],
+      "text": [
+        "When thinking about what to put on the site I had an idea.",
+        "What about the steps I went through to make it?",
+        "And thus my journey begins..."
+      ]
+    },
+    {
+      "imageWrapper": "object-scale-down flex justify-center h-48 w-full m-2",
+      "images": [
+        {
+          "src": "Raspi.png",
+          "alt": "raspberry pi logo",
+          "tailwindCSS": "float-left h-full"
+        },
+        {
+          "src": "aws.svg.png",
+          "alt": "aws logo",
+          "tailwindCSS": "float-right h-full"
+        }
+      ],
+      "text": [
+        "There's two main pieces I'll need, some code that makes up the site, and a machine for the site to be hosted on.",
+        "In terms of having a machine to run the site on I knew I had two main options, hosting it on a cloud instance or on a raspberry pi I have lying around.",
+        "I decided to go for making a vm instance on AWS for mostly the learning experience. (plus they've got a generous free tier)"
+      ]
+    },
+    {
+      "images": [
+        {
+          "src": "awsLaunchInstance.PNG",
+          "alt": "AWS instance launch screen",
+          "tailwindCSS": ""
+        }
+      ],
+      "text": ["So I made an AWS account, booted up a micro ec2-instance on the free tier, set up sshing into the VM, and allowed http and https protocols in the security groups"]
+    },
+    {
+      "images": [
+        {
+          "src": "reactAppStart.PNG",
+          "alt": "empty Webstorm Project",
+          "tailwindCSS": ""
+        }
+      ],
+      "text": [
+        "Now I need to set up the project that will be the code that actually runs",
+        "So I went to my favorite ide for web development(Webstorm) and made a new React based project, and linked it up to a remote git repository",
+        "When making a site choosing a css framework to use can significantly cut down on development time",
+        "I decided to go with Tailwind because it's lightweight and allows a lot of customization very rapidly"
+      ]
+    },
+    {
+      "images": [
+        {
+          "src": "siteText.PNG",
+          "alt": "inception type picture of the text",
+          "tailwindCSS": ""
+        }
+      ],
+      "text": [
+        "After choosing a css framework I now have to do all the grunt work including writing this text you're reading and putting in these images you're looking at"
+      ]
+    },
+    {
+      "images": [
+        {
+          "src": "EarlySiteLook.PNG",
+          "alt": "image of the site early on in development",
+          "tailwindCSS": ""
+        }
+      ],
+      "text": [
+        "Here's what the site looked like really early on (I sure hope it looks better now)"
+      ]
+    },
+    {
+      "images": [
+        {
+          "src": "BuildForServer.PNG",
+          "alt": "terminal view",
+          "tailwindCSS": ""
+        }
+      ],
+      "text": [
+        "After some work on the site's looks I wanted to make it so that I could actually run the code I've been writing on the VM I had booted up on AWS.",
+        "So after connecting to the Virtual Machine I installed git, made a folder for the website to be contained within,",
+        "pulled the repository from github, installed nodejs and npm, installed dependencies, and then made a production build of the app"
+      ]
+    },
+    {
+      "images": [
+        {
+          "src": "NginxLandingPage.PNG",
+          "alt": "view of what the nginx landing page looks like",
+          "tailwindCSS": ""
+        }
+      ],
+      "text": [
+        "After a bit of pain editing the Virtual Machine's security groups again, and messing with installation commands and config files,",
+        "I eventually got it so that the nginx landing page would appear when I went to the VM's public ip address"
+      ]
+    },
+    {
+      "images": [
+        {
+          "src": "Namecheap-Logo.wine.svg",
+          "alt": "namecheap's logo",
+          "tailwindCSS": ""
+        }
+      ],
+      "text": [
+        "Now I just need to buy a domain name for my site. I used Namecheap and decided on the domain max-hoecker.com because unfortunately maxhoecker.com was already taken by my doppelganger",
+        "After buying the domain I just had to make an A record and point it to the ip address of the virtual machine."
+      ]
+    }
+  ]
+}

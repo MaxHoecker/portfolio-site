@@ -17,11 +17,6 @@ And I've been on one co-op, it was this past Summer/Fall of 2020 and I'm current
 
 How It's Made:
 
---prelude
-You may be wondering, What is this mysterious tab called "how it's made" and why does it exist?
-Basically, I was looking at different places to apply for spring co-ops and in their application they would have a field for "personal website"
-so I thought, why haven't I made a site of my own?
-I certainly know how to.
 
 When thinking about what to put on the site I had an idea.
 What about the steps I went through to make it?
@@ -55,13 +50,31 @@ After buying the domain I just had to make an A record and point it to the ip ad
 
 And just like that, bada-bing bada-boom I have a website!
 
+But who wants to visit an insecure site? Next up, SSl/TLS encryption!
+
+This was probably the most painful step thus far. I installed certbot to do all the heavy lifting for me. Using cert-bot I generated a public and private certificate.
+
+All that was left was telling nginx to use the certs and set up the server on port 443 instead of port 80.
+At this point I was running into a weird segmentation fault with nginx and after hours of struggling, I arrived at an ingenious solution.
+Uninstalling and re-installing nginx.
+After that, things started to actually work as expected and I got my config working!
+Behold, the beautiful padlock!!!
+
+At this point this is what my site looked like. I was not satisfied. I want to make it look better.
+
+But before I can make it look better, I kinda need to do some significant refactoring.
+
+Time to use the factory design pattern
+
+Make a better image loading system
+
 Reflection:
 Learning experience
 definitely worth it
 cool seeing how every layer of the tech stack interacts with each other
+nginx is still a pain to work with. But at least it's less of a pain than it was before
+image loading suuuucks
 making things look nice is hard, like 80% of the work
-
-Shout-out to my friend Rachel for helping me figure out how to make the site not look like trash!
 
 Big thanks to https://javascript.plainenglish.io/how-to-trigger-animations-using-react-hooks-27f0231b98b7 for helping figure out animations
 
