@@ -1,5 +1,5 @@
 import {Collapse} from 'react-collapse';
-import React, {UseState} from 'react';
+import React from 'react';
 import Alerter from "../wrappers/Alerter";
 
 export default function Experience(props){
@@ -13,27 +13,12 @@ export default function Experience(props){
     }
 
     let child = (
-        // <div className={wrapperCSS}>
-        //     <div>
-        //         {props.image}
-        //         <h1 className={"text-secondary"}>
-        //             {props.title}
-        //         </h1>
-        //     </div>
-        //     <div className={contentCSS}>
-        //         <Collapse key={props.title} isOpened={isOpen}>
-        //             {props.child}
-        //         </Collapse>
-        //     </div>
-        //
-        // </div>
         <div className={wrapperCSS}>
             <div className="md:flex">
                 <div className="md:flex-shrink-0">
                     <img className={imageCSS} src={props.image || ""} alt={props.alt} />
                 </div>
                 <div className="p-8 m-auto">
-                    {/*<div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>*/}
                     <a href="#" className="block mt-1 text-lg leading-tight font-medium text-secondary hover:underline">
                         {props.title}
                     </a>

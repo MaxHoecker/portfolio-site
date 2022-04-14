@@ -1,18 +1,11 @@
-import NavBar from "./components/NavBar";
-import Header from "./components/Header";
+import MainPageRender from "./components/MainPage";
 
 function App() {
-
-  let componentList = [];
-
-  componentList.push(<Header key={"Header-Component"} />);
-  componentList.push(<NavBar key={"NavBar-Component"} />);
-
-  return (
-      <div className={"bg-backgroundColor-dark h-screen overflow-x:hidden overflow-y:scroll"}>
-        {componentList}
-      </div>
-  );
+    return (
+        <div className={"bg-backgroundColor-dark h-screen overflow-x:hidden overflow-y:scroll"}>
+            <MainPageRender key={"NavBar-Component"} />
+        </div>
+    );
 }
 
 export default App;

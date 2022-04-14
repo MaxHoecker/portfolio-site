@@ -36,14 +36,6 @@ export default function ExperiencePage() {
         </div>
     );
 
-    // const SeniorProject =(
-    //     <div>
-    //         <p>
-    //             Senior Project Website
-    //         </p>
-    //     </div>
-    // );
-
     const SupplementalInstruction = (
         <div>
             <ul className={"list-disc"}>

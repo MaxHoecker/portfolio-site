@@ -13,7 +13,7 @@ export default function Tab(props){
 
     const tabActiveCss = "text-backgroundColor bg-primary ";
 
-    const tabInactiveCss = "text-primary bg-backgroundColor";
+    const tabInactiveCss = "text-primary bg-backgroundColor ";
 
     return (
         <li className="-mb-px mx-1 ml-2 last:mr-0 flex-auto text-center">
@@ -27,7 +27,7 @@ export default function Tab(props){
                 }
                 onClick={onClick}
                 data-toggle="tab"
-                href="#link1"
+                href="#"
                 role="tablist"
             >
                 {props.tabHeader}
