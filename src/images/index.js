@@ -12,18 +12,20 @@ const images = {
         si: require('./experience/SILogo.jpg').default
     },
     howItsMade: {
-        allImages: [
-            "",
-            require(`./howItsMade/${storyContent.content[1].images[0].src}`).default,
-            require(`./howItsMade/${storyContent.content[1].images[1].src}`).default,
-            require(`./howItsMade/${storyContent.content[2].images[0].src}`).default,
-            require(`./howItsMade/${storyContent.content[3].images[0].src}`).default,
-            require(`./howItsMade/${storyContent.content[4].images[0].src}`).default,
-            require(`./howItsMade/${storyContent.content[5].images[0].src}`).default,
-            require(`./howItsMade/${storyContent.content[6].images[0].src}`).default,
-            require(`./howItsMade/${storyContent.content[7].images[0].src}`).default,
-            require(`./howItsMade/${storyContent.content[8].images[0].src}`).default,
-        ]
+        allImages: {
+            intro: [""],
+            hosting: [
+                require(`./howItsMade/${storyContent.content[1].images[0].src}`).default,
+                require(`./howItsMade/${storyContent.content[1].images[1].src}`).default
+            ],
+            aws: [require(`./howItsMade/${storyContent.content[2].images[0].src}`).default],
+            newProject: [require(`./howItsMade/${storyContent.content[3].images[0].src}`).default],
+            siteText: [require(`./howItsMade/${storyContent.content[4].images[0].src}`).default],
+            earlyLook: [require(`./howItsMade/${storyContent.content[5].images[0].src}`).default],
+            reactBuild: [require(`./howItsMade/${storyContent.content[6].images[0].src}`).default],
+            nginxLanding: [require(`./howItsMade/${storyContent.content[7].images[0].src}`).default],
+            namecheap: [require(`./howItsMade/${storyContent.content[8].images[0].src}`).default]
+        }
     },
 };
 
