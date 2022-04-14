@@ -6,8 +6,6 @@ export default function HowItsMadeItem(props) {
     let imageIndex = 0;
     let textLines = []
 
-    console.log("props", props)
-
     props.content?.images.forEach(storyItemImage => {
         images.push(
             <img className={storyItemImage?.tailwindCSS} src={props.imageResources[imageIndex]} alt={storyItemImage?.alt}/>
