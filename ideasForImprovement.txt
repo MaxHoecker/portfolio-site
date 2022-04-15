@@ -1,8 +1,3 @@
-add https!
-
-Don't have separate tabs
-make it all one big tab
-links at the top jump to important sections
 
 replace prelude and get to the point
 
@@ -13,6 +8,14 @@ maybe make it an interactive game? O.o
 use design patterns
 
 show usage of design patterns
+
+gradients 0.5
+
+parallax 0.5
+
+fix tailwind 2
+
+responsive 1
 
 
 

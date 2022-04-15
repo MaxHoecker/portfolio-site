@@ -68,9 +68,13 @@ But before I can make it look better, I kinda need to do some significant refact
 
 Time to use the factory design pattern
 
-Make a better image loading system
-
 picking out new colors
+
+so... much... css...
+
+adding parallax!
+
+making it responsive...
 
 
 
