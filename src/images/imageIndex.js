@@ -13,16 +13,16 @@ const images = {
         allImages: {
             intro: [""],
             hosting: [
-                require(`./howItsMade/${storyContent.content[1].images[0].src}`).default,
-                require(`./howItsMade/${storyContent.content[1].images[1].src}`).default
+                require(`./howItsMade/Raspi.png`).default,
+                require(`./howItsMade/aws.svg.png`).default
             ],
-            aws: [require(`./howItsMade/${storyContent.content[2].images[0].src}`).default],
-            newProject: [require(`./howItsMade/${storyContent.content[3].images[0].src}`).default],
-            siteText: [require(`./howItsMade/${storyContent.content[4].images[0].src}`).default],
-            earlyLook: [require(`./howItsMade/${storyContent.content[5].images[0].src}`).default],
-            reactBuild: [require(`./howItsMade/${storyContent.content[6].images[0].src}`).default],
-            nginxLanding: [require(`./howItsMade/${storyContent.content[7].images[0].src}`).default],
-            namecheap: [require(`./howItsMade/${storyContent.content[8].images[0].src}`).default]
+            aws: [require(`./howItsMade/awsLaunchInstance.PNG`).default],
+            newProject: [require(`./howItsMade/reactAppStart.PNG`).default],
+            siteText: [require(`./howItsMade/siteText.PNG`).default],
+            earlyLook: [require(`./howItsMade/EarlySiteLook.PNG`).default],
+            reactBuild: [require(`./howItsMade/BuildForServer.PNG`).default],
+            nginxLanding: [require(`./howItsMade/NginxLandingPage.PNG`).default],
+            namecheap: [require(`./howItsMade/Namecheap-Logo.wine.svg`).default]
         }
     },
 };
