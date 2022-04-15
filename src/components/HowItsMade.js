@@ -9,7 +9,7 @@ import ScrollSlideRight from "../wrappers/ScrollSlideRight";
 import HowItsMadeItem from "./HowItsMadeItem";
 
 
-export default function HowItsMadePage(){
+export default function HowItsMade(){
 
 
     let itemList = []

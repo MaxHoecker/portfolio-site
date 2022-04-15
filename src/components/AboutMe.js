@@ -1,7 +1,7 @@
 import niagara from "./../images/index"
 import aboutMeText from "./../siteText/AboutMe.json"
 
-export default function AboutPage() {
+export default function AboutMe() {
 
     let aboutMeLines = []
     aboutMeText.lines.forEach(element => aboutMeLines.push(<>{element}<br/></>))

@@ -1,7 +1,5 @@
 import storyContent from "./../siteText/HowItsMade.json"
 
-console.log("storyContent", storyContent.content[1]);
-
 const images = {
     aboutMe: {
         niagra: require("./aboutMe/niagra.jpg").default

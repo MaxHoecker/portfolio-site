@@ -1,4 +1,4 @@
-export default function ContactMePage() {
+export default function ContactMe() {
 
     const contactCss = "text-primary m-4";
     const headerCss = "text-secondary text-xl";
