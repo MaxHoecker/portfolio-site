@@ -2,7 +2,7 @@ import FadeInCard from "./FadeInCard";
 import React from "react";
 
 import storyContent from "./../siteText/HowItsMade.json";
-import images from "../images/index";
+import images from "../images/imageIndex";
 
 import ScrollSlideLeft from "../wrappers/ScrollSlideLeft";
 import ScrollSlideRight from "../wrappers/ScrollSlideRight";

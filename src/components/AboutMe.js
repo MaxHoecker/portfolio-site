@@ -1,4 +1,4 @@
-import niagara from "./../images/index"
+import niagara from "../images/imageIndex"
 import aboutMeText from "./../siteText/AboutMe.json"
 
 export default function AboutMe() {
