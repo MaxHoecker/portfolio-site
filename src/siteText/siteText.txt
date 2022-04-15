@@ -17,6 +17,8 @@ And I've been on one co-op, it was this past Summer/Fall of 2020 and I'm current
 
 How It's Made:
 
+!!!WARNING!!!
+the next section is very long and a lot of reading
 
 When thinking about what to put on the site I had an idea.
 What about the steps I went through to make it?
@@ -67,6 +69,10 @@ But before I can make it look better, I kinda need to do some significant refact
 Time to use the factory design pattern
 
 Make a better image loading system
+
+picking out new colors
+
+
 
 Reflection:
 Learning experience

@@ -5,9 +5,6 @@ export default function Header() {
     return(
         <div className={"p-10"}>
             <h1 className={classNameText}>Max Hoecker</h1>
-            {
-                // resume link?
-            }
         </div>
 
     )

@@ -51,7 +51,7 @@ export default function MainPageRender() {
         <div className="flex flex-wrap bg-backgroundColor-dark">
             <div className="w-full">
                 <ul
-                    className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
+                    className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row top-0 z-50 sticky"
                     role="tablist"
                 >
                     <Tab
