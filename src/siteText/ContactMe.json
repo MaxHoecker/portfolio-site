@@ -1,6 +1,20 @@
 {
-  "resume": "tbd",
-  "email": ["hoecker.max@gmail.com (preferred)", "mjh9131@rit.edu"],
-  "linkedin": "https://linkedin.com/in/MaxHoecker",
-  "github": "https://github.com/MaxHoecker"
+  "email": {
+    "header": "Email:",
+    "link": false,
+    "content": [
+      "hoecker.max@gmail.com (preferred)",
+      "mjh9131@rit.edu"
+    ]
+  },
+  "linkedin": {
+    "header": "Linkedin:",
+    "link": true,
+    "content": ["https://linkedin.com/in/MaxHoecker"]
+  },
+  "github": {
+    "header": "Github",
+    "link": true,
+    "content": ["https://github.com/MaxHoecker"]
+  }
 }
